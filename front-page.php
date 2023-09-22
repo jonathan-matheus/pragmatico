@@ -1,5 +1,9 @@
-<?php require_once('header.php'); ?>
+<?php
+// carega o cabeçalho
+require_once('header.php');
+?>
 
-<h1 class="font-1-xl w-c container"><?php bloginfo('name'); ?></h1>
-
-<?php require_once('footer.php'); ?>
+<?php
+// carega o rodapé
+require_once('footer.php');
+?>
