@@ -1,0 +1,10 @@
+/**
+ * Espaçamento interno 
+ * Alinhamento do texto
+ * Bordas aredondada
+*/
+.banner {
+  padding: 236px 293px;
+  text-align: center;
+  border-radius: 5px;
+}

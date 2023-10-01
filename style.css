@@ -11,7 +11,15 @@
   padding-top: 48px;
 }
 
+.s-200 {
+  padding-top: 200px;
+}
+
 /* CORES */
+.c4-c {
+  color: #cccccc;
+}
+
 .p1-b {
   background-color: #282d31;
 }
@@ -33,13 +41,38 @@
   line-height: 40px;
 }
 
+.font-1-m {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
 /* LINKS */
 a {
   text-decoration: none;
+  color: #ffffff;
+  transform: 0.3s;
+}
+
+a:hover {
+  color: #cccccc;
 }
 
 /* BOTÃO */
+/*
+* Configura os espaçamentos do botão, e tempo de transição para efeitos
+*/
 .botao {
   padding: 12px 20px;
   border-radius: 5px;
+  transition: 0.3s;
+}
+
+/*
+* Configura a cor do botão ao passar o mause
+*/
+.botao a:hover {
+  color: #ffffff;
 }

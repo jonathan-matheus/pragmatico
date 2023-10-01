@@ -24,13 +24,22 @@ nav.menu ul li {
 * Define o peso da fonte
 * Define a altura da linha
 * Converte todas as letras para maiusculas
+* Tempo de transição para efeitos
 */
 nav.menu ul li a {
-  color: #ffffff;
+  color: #cccccc;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+
+/*
+* Altera cor do item do menu ao passar o mause
+*/
+nav.menu ul li a:hover {
+  color: #ffffff;
 }

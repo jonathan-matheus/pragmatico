@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/css/bootstrap.min.css'; ?> ">
     <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/css/cabecalho.css'; ?>">
+    <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/css/banners.css'; ?>">
     <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/style.css'; ?> ">
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
@@ -29,6 +30,6 @@
 
         <!-- Botão -->
         <div class="botao p2-b">
-            <a class="w-c" href="/contato">CONTATO</a>
+            <a class="c4-c" href="/contato">CONTATO</a>
         </div>
     </div>
