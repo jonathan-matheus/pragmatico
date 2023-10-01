@@ -24,6 +24,10 @@
   color: #ededed;
 }
 
+.c12-c {
+  color: #000000;
+}
+
 .p1-b {
   background-color: #282d31;
 }
@@ -34,6 +38,10 @@
 
 .w-c {
   color: #ffffff;
+}
+
+.w-b {
+  background-color: #ffffff;
 }
 
 /* FONTES */
@@ -88,11 +96,4 @@ a:hover {
   padding: 12px 20px;
   border-radius: 5px;
   transition: 0.3s;
-}
-
-/*
-* Configura a cor do botão ao passar o mause
-*/
-.botao a:hover {
-  color: #ffffff;
 }

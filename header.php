@@ -30,7 +30,7 @@
         </nav>
 
         <!-- Botão -->
-        <div class="botao p2-b">
-            <a class="c4-c" href="/contato">CONTATO</a>
-        </div>
+        <?php
+        pragmatico_botao("/contato", "CONTATO");
+        ?>
     </div>

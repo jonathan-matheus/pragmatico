@@ -71,6 +71,21 @@ include('banner.php');
     ?>
 </div>
 
+<!-- PROJETOS -->
+<div class="s-200"></div>
+<div class="d-flex container justify-content-between align-items-center">
+    <div>
+        <h2 class="font-1-xl w-c"><?php echo $projetos_titulo ?></h2>
+        <p class="font-1-m c4-c"><?php echo $projetos_descricao ?></p>
+    </div>
+
+    <div>
+        <?php
+        pragmatico_botao("/", "VEJA TODOS OS PROJETOS");
+        ?>
+    </div>
+</div>
+
 <?php
 // carega o rodapé
 require_once('footer.php');
