@@ -7,6 +7,7 @@
     <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/css/bootstrap.min.css'; ?> ">
     <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/css/cabecalho.css'; ?>">
     <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/css/banners.css'; ?>">
+    <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/css/servicos.css'; ?>">
     <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/style.css'; ?> ">
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>

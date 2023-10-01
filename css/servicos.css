@@ -1,0 +1,19 @@
+/**
+* Espaçamento interno
+* Espaçamento externo inferior
+* Raio da borda
+*/
+.servico {
+  padding: 32px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/**
+* Imagen do serviço 
+*
+* Espaçamento interno, lateral direito
+*/
+.servico img {
+  padding-right: 20px;
+}

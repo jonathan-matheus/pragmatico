@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * Registra o tipo de postagem 'servicos'.
+ *
+ * @return void
+ */
 function pragmatico_post_type_servicos()
 {
     register_post_type(
