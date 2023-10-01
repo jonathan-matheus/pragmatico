@@ -13,3 +13,6 @@ require_once('php/textos-front-page.php');
 
 // cria as tabelas nescessarias no banco de dados
 require_once('php/banco-de-dados.php');
+
+// cria o post type servicos
+require_once('php/servicos.php');
