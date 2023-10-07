@@ -7,6 +7,10 @@
 */
 
 /* ESPAÇAMENTO */
+.s-20 {
+  padding-top: 20px;
+}
+
 .s-48 {
   padding-top: 48px;
 }
@@ -28,6 +32,10 @@
   color: #cccccc;
 }
 
+.c5-c {
+  color: #b2b2b2;
+}
+
 .c12-c {
   color: #000000;
 }
@@ -46,6 +54,20 @@
 
 .w-b {
   background-color: #ffffff;
+}
+
+/* CORES PADRÃO */
+p {
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
 }
 
 /* FONTES */

@@ -29,19 +29,36 @@ require_once('php/experiencia.php');
 // FUNÇÕES GEREAIS
 
 /**
- * Gera um elemento HTML de botão com um link e um valor.
+ * Gera um elemento HTML de botão com um link e um valor. 
+ * 
+ * Se no lugar do link for passado um slug, o botão irá apontar para a página 
+ * do slug
  *
- * @param string $link O URL para o qual o botão deve apontar.
+ * @param string $link O URL ou slug da página.
  * @param string $valor O texto que deve ser exibido no botão.
  * @return void
  */
 function pragmatico_botao($link, $valor)
 {
+    // cria o link
+    $page_slug = $link;
+    $page = get_page_by_path($page_slug);
+
+    if ($page) {
+        $link = get_permalink($page->ID);
+    }
+    // html do botão
     echo '<div class="botao w-b">';
     echo '<a class="c12-c" href="' . $link . '">' . $valor . '</a>';
     echo '</div>';
 }
 
+/**
+ * Gera um banner com um título e descrição fornecidos.
+ *
+ * @param string $titulo O título do banner.
+ * @param string $descricao A descrição do banner.
+ */
 function pragmatico_banner($titulo, $descricao)
 {
     echo '<div class="s-48"></div>';

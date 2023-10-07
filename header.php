@@ -19,7 +19,7 @@
 <body class="p1-b" <?php body_class(); ?>>
     <div class="cabecalho s-48 container d-flex align-items-center justify-content-between">
         <!-- Titulo -->
-        <h1 class="font-1-xl w-c"><?php bloginfo('name'); ?></h1>
+        <h1 class="font-1-xl w-c"><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 
         <!-- Menu -->
         <nav class="menu">
@@ -34,6 +34,6 @@
 
         <!-- Botão -->
         <?php
-        pragmatico_botao("/contato", "CONTATO");
+        pragmatico_botao("contato", "CONTATO");
         ?>
     </div>

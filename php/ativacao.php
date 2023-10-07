@@ -14,7 +14,8 @@ function pragmatico_cria_paginas()
         'sobre' => 'sobre',
         'portfolio' => 'portfolio',
         'servicos' => 'serviços',
-        'blog' => 'blog'
+        'blog' => 'blog',
+        'contato' => 'contato'
     );
 
     foreach ($paginas as $slug => $title) {
