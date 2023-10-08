@@ -82,7 +82,7 @@ pragmatico_banner($banner_top_titulo, $banner_top_descricao);
 
 <!-- SOBRE -->
 <div class="s-200"></div>
-<div class="container d-flex align-items-center justify-content-between">
+<div class="container sobre_container d-flex align-items-center justify-content-between">
     <div>
         <?php
         the_custom_logo();

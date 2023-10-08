@@ -2,3 +2,17 @@
   padding-left: 125px;
   padding-bottom: 32px;
 }
+
+/* Ajusta o sobre para versão mobile */
+@media (max-width: 425px) {
+  /* Permite que o text e a imagem quebrem */
+  .sobre_container {
+    flex-wrap: wrap;
+  }
+
+  /* Ajusta o espaçamento interno do texto */
+  .texto_sobre {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
