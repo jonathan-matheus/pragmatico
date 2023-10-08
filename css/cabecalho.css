@@ -43,3 +43,18 @@ nav.menu ul li a {
 nav.menu ul li a:hover {
   color: #ffffff;
 }
+
+/* Ajusta o cabeçalho na versão mobile */
+@media (max-width: 425px) {
+  div.cabecalho {
+    justify-content: center !important;
+  }
+
+  nav.menu {
+    padding-top: 20px;
+  }
+
+  div.cabecalho div.botao {
+    margin-top: 20px;
+  }
+}
