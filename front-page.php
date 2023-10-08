@@ -53,7 +53,7 @@ pragmatico_banner($banner_top_titulo, $banner_top_descricao);
         echo '</div>';
         echo '<div>';
         echo '<h2 class="font-1-l w-c">' . $servicos_titulo[$i]  . '</h2>';
-        echo '<p class="font-2-xs c2-c">' . $servicos_descricao[$i] . '</p>';
+        echo '<p class="font-2-xs c4-c">' . $servicos_descricao[$i] . '</p>';
         echo '</div>';
         echo '</div>';
     }
