@@ -14,7 +14,7 @@ pragmatico_banner($banner_top_titulo, $banner_top_descricao);
 
 <!-- Serviços -->
 <div class="s-200"></div>
-<div class="d-flex container">
+<div class="d-flex container servico_container">
     <div>
         <h2 class="font-1-xl w-c"><?php echo $servicos_titulo ?></h2>
         <p class="font-1-m c4-c"><?php echo $servicos_descricao ?></p>

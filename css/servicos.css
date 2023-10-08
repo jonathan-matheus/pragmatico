@@ -17,3 +17,9 @@
 .servico img {
   padding-right: 20px;
 }
+
+@media (max-width: 425px) {
+  .servico_container {
+    flex-wrap: wrap;
+  }
+}
