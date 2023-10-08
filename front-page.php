@@ -101,7 +101,7 @@ pragmatico_banner($banner_top_titulo, $banner_top_descricao);
 
 <!-- Experiencia -->
 <div class="s-200"></div>
-<div class="d-flex container">
+<div class="d-flex experiencia_container container">
     <div class="col-6">
         <?php
         echo '<h2 class="font-1-xl w-c">' . $experiencia_titulo . '</h2>';
@@ -128,7 +128,7 @@ pragmatico_banner($banner_top_titulo, $banner_top_descricao);
     }
 
     // html das experiencias
-    echo '<div class="d-flex justify-content-between">';
+    echo '<div class="d-flex experiencia_container justify-content-between">';
     for ($i = 0; $i < count($experiencias_titulo); $i++) {
         echo '<div class="periodo_texto">';
         echo '<p class="font-1-m c4-c nowrap-text">' . $experiencias_periodo[$i] . '</p>';

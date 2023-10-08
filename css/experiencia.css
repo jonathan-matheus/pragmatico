@@ -5,3 +5,25 @@
 .experiencias_descricao {
   padding-top: 24px;
 }
+
+/* Torna responsivo a area de experiencias */
+@media (max-width: 425px) {
+  /* Permite que o texto quebre */
+  .experiencia_container {
+    flex-wrap: wrap;
+  }
+
+  /* Permite que o texto ocupe todo o espaço da tela */
+  div.experiencia_container div.col-6 {
+    width: 100%;
+  }
+
+  /* 
+  * O primeir "padding: 0px 0px;", serve para sobre excrever o padding padrão
+  * anterior, já o segundo adiciona um espaçamento superior.
+  */
+  .periodo_texto {
+    padding: 0px 0px;
+    padding-top: 20px;
+  }
+}
