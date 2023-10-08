@@ -63,7 +63,7 @@ pragmatico_banner($banner_top_titulo, $banner_top_descricao);
 
 <!-- PROJETOS -->
 <div class="s-200"></div>
-<div class="d-flex container justify-content-between align-items-center">
+<div class="d-flex projetos_container container justify-content-between align-items-center">
     <div>
         <h2 class="font-1-xl w-c"><?php echo $projetos_titulo ?></h2>
         <p class="font-1-m c4-c"><?php echo $projetos_descricao ?></p>

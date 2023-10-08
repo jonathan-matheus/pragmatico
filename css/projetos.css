@@ -5,3 +5,28 @@
 .projetos div.textos_projetos {
   padding: 0px 20px 0px 105px;
 }
+
+/**
+* Deixa a area de projetos responsiva
+*/
+@media (max-width: 425px) {
+  /* Perminte que o texto e o botão quebrem em talas menores */
+  .projetos_container {
+    flex-wrap: wrap;
+  }
+
+  /* Permite que o texto no bloco de projetos quebre em relação a imagem */
+  .projetos {
+    flex-wrap: wrap;
+  }
+
+  /* Diminui o espaçamento interno do texto */
+  .projetos div.textos_projetos {
+    padding: 20px 20px 0px 20px;
+  }
+
+  /* Permite que a imagen se ajuste melhor na versão mobile */
+  div.img_projetos img {
+    width: 100%;
+  }
+}

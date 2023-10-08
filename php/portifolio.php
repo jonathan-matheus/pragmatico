@@ -32,7 +32,7 @@ for ($i = 0; $i < count($projetos_titulo); $i++) {
     echo '<p class="font-1-m c2-c">' . $projetos_descricao[$i] . '</p>';
     echo '</div>';
 
-    echo '<div>';
+    echo '<div class="img_projetos">';
     echo '<img src="' . $projetos_imagen[$i] . '">';
     echo '</div>';
 }
