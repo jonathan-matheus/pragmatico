@@ -2,7 +2,7 @@
 * Theme Name: Pragmatico
 * Author: Jonathan Matheus Da Silva
 * Description: Portfolio
-* Version: 1.8.0
+* Version: 1.9.0
 * Tags: portfolio, web design, programmer
 */
 
@@ -70,6 +70,10 @@ h6 {
   color: #ffffff;
 }
 
+li {
+  color: #ededed;
+}
+
 /* FONTES */
 .font-1-xl {
   font-family: "Poppins", sans-serif;
@@ -111,12 +115,18 @@ h6 {
 /* LINKS */
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #0000ff;
   transform: 0.3s;
 }
 
 a:hover {
   color: #cccccc;
+}
+
+h1 a,
+h2 a,
+h3 a {
+  color: #ffffff;
 }
 
 /* BOTÃO */

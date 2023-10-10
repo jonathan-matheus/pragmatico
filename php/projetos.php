@@ -11,6 +11,7 @@ function pragmatico_post_type_projects()
             'public' => true,
             'menu_icon' => 'dashicons-portfolio',
             'menu_position' => 5,
+            'show_in_rest' => true,
             'supports' => [
                 'title',
                 'editor',
@@ -52,6 +53,7 @@ function pragmatico_function_metabox_projetos($post)
     echo '<br>';
 
     echo '<label for="descricao">Breve descrição do projeto</label>';
+    echo '</br>';
     echo '<textarea name="descricao" id="descricao" cols="100" rows="5">';
     echo $texto;
     echo '</textarea>';
