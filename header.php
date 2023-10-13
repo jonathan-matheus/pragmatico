@@ -19,7 +19,7 @@
 <body class="p1-b" <?php body_class(); ?>>
     <div class="cabecalho s-48 container d-flex flex-wrap align-items-center justify-content-between">
         <!-- Titulo -->
-        <h1 class="font-1-xl w-c"><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h1 class="font-1-xl site-titulo w-c"><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 
         <!-- Menu -->
         <nav class="menu">

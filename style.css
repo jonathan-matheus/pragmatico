@@ -6,6 +6,9 @@
 * Tags: portfolio, web design, programmer
 */
 
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@0,100;1,100&display=swap");
+
 /* ESPAÇAMENTO */
 .s-20 {
   padding-top: 20px;
@@ -81,6 +84,10 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
+}
+
+.site-titulo {
+  font-family: "Orbitron", sans-serif;
 }
 
 .font-1-m {

@@ -22,6 +22,10 @@ if ($posts->have_posts()) {
         echo '<h1 class="font-1-l"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h1>';
         echo '<p class="font-2-xs c4-c">' . get_the_date() . '</p>';
         echo '<p class="font-2-xs c5-c">' . wp_trim_words(get_the_content(), 30) . '...</p>';
+        // nome do autor
+        $author_id = get_the_author_meta('ID');
+        $author_nome = get_the_author_meta('display_name', $author_id);
+        echo '<p class="font-2-xs c5-c">Escrito por ' . $author_nome . '</p>';
         echo '</div>';
     }
     echo '</div>';
