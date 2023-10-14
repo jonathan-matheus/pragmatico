@@ -28,8 +28,8 @@ if ($projetos->have_posts()) {
 echo '<div class="d-flex p2-b projetos align-items-center container">';
 for ($i = 0; $i < count($projetos_titulo); $i++) {
     echo '<div class="textos_projetos">';
-    echo '<p class="font-2-xs c1-c">' . $projetos_categoria[$i] . '</p>';
-    echo '<h2 class="font-1-l w-c"><a href="' . $projetos_url[$i] . '">' . $projetos_titulo[$i] . '</a></h2>';
+    echo '<p class="font-2-xs c4-c">' . $projetos_categoria[$i] . '</p>';
+    echo '<h2 class="font-1-l w-c fw-bold"><a href="' . $projetos_url[$i] . '">' . $projetos_titulo[$i] . '</a></h2>';
     echo '<p class="font-1-m c4-c">' . $projetos_descricao[$i] . '</p>';
     echo '</div>';
 
