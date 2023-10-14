@@ -1,9 +1,5 @@
 <?php
-// carrega o cabeçalho
-require_once('header.php');
-?>
-
-<?php
+// cria o argumento que ira retornar todos os posts
 $args = [
     'post_type' => 'post',
     'posts_per_page' => -1,
@@ -12,6 +8,7 @@ $args = [
     'post_status' => 'publish'
 ];
 
+// lista todos os posts
 $posts = new WP_Query($args);
 if ($posts->have_posts()) {
     echo '<div class="s-48"></div>';
@@ -26,10 +23,3 @@ if ($posts->have_posts()) {
     }
     echo '</div>';
 }
-?>
-
-
-<?php
-// carrgando o rodape
-require_once('footer.php');
-?>
