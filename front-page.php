@@ -76,8 +76,6 @@ pragmatico_banner($banner_top_titulo, $banner_top_descricao);
     </div>
 </div>
 
-<div class="s-48"></div>
-
 <?php require_once('php/portifolio.php'); ?>
 
 <!-- SOBRE -->

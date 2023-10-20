@@ -25,8 +25,9 @@ if ($projetos->have_posts()) {
 }
 
 // html dos projetos
-echo '<div class="d-flex p2-b projetos align-items-center container">';
 for ($i = 0; $i < count($projetos_titulo); $i++) {
+    echo '<div class="s-48"></div>';
+    echo '<div class="d-flex p2-b projetos align-items-center container">';
     echo '<div class="textos_projetos">';
     echo '<p class="font-2-xs c4-c">' . $projetos_categoria[$i] . '</p>';
     echo '<h2 class="font-1-l w-c fw-bold"><a href="' . $projetos_url[$i] . '">' . $projetos_titulo[$i] . '</a></h2>';
@@ -38,5 +39,5 @@ for ($i = 0; $i < count($projetos_titulo); $i++) {
     echo '<img src="' . $projetos_imagen[$i] . '">';
     echo '</div>';
     echo '</a>';
+    echo '</div>';
 }
-echo '</div>';
