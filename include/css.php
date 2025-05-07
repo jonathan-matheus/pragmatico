@@ -26,7 +26,7 @@ function pragmatico_enqueue_styles()
         ],
         [
             'handle' => 'bootstrap',
-            'src' => 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css',
+            'src' => get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css',
             'deps' => ['custom-colors', 'pragmatico-style', 'fonts'],
             'ver' => '5.3.5',
             'media' => 'all'

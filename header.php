@@ -3,7 +3,7 @@ $titulo = get_bloginfo('name');
 $home_url = get_home_url();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
     <meta charset="UTF-8">

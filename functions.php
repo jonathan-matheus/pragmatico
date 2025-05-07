@@ -3,7 +3,8 @@ $route_files_includes = [
     'support',
     'css',
     'menus',
-    'filters'
+    'filters',
+    'customizer'
 ];
 
 foreach ($route_files_includes as $file) {
