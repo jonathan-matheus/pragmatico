@@ -9,8 +9,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php require_once get_template_directory() . "/include/colors.php"; ?>
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
+        <div id="header" class="d-flex justify-content-between align-items-center">
             <div>
                 <?php
                 if (has_custom_logo()) {

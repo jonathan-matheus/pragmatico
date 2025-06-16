@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.menu-item a:hover {
+  color: var(--primary-color-hover);
+}
+
+#header {
+  margin-top: 32px;
+}

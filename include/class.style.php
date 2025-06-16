@@ -28,12 +28,29 @@ class Style
         );
     }
 
-    public function loadMenus()
+    /**
+     * Enfileira a folha de estilos CSS do cabeçalho para o tema.
+     *
+     * Este método registra e enfileira o arquivo 'header.css' localizado no diretório assets/css do tema.
+     * Deve ser chamado para garantir que os estilos do cabeçalho sejam carregados corretamente no frontend.
+     *
+     * @return void
+     */
+    public function loadHeader(): void
     {
         wp_enqueue_style(
-            "menus",
+            "header",
             get_template_directory_uri() .
-            "/assets/css/menus.css"
+            "/assets/css/header.css"
+        );
+    }
+
+    public function loadFonts(): void
+    {
+        wp_enqueue_style(
+            "fonts",
+            get_template_directory_uri() .
+            "/assets/css/fonts.css"
         );
     }
 }
