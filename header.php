@@ -11,7 +11,8 @@
 <body <?php body_class(); ?>>
     <?php require_once get_template_directory() . "/include/colors.php"; ?>
     <div class="container">
-        <div id="header" class="d-flex justify-content-between align-items-center">
+        <div id="header"
+            class="d-flex flex-column gap-4 flex-sm-row flex-wrap justify-content-between align-items-center">
             <div>
                 <?php
                 if (has_custom_logo()) {
@@ -21,11 +22,18 @@
                 }
                 ?>
             </div>
-            <nav>
+            <nav class="d-flex flex-column flex-sm-row gap-4 align-items-center">
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'header',
                 ]);
                 ?>
+                <a href="<?= get_theme_mod('primary_button_link', '#'); ?>">
+                    <button type="button" class="btn btn-content font-1-m-b">
+                        <?=
+                            get_theme_mod('primary_button_text', 'Contact');
+                        ?>
+                    </button>
+                </a>
             </nav>
         </div>

@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 16px;
   list-style: none;
@@ -7,7 +8,7 @@
 
 .menu-item a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--w);
   font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -15,9 +16,25 @@
 }
 
 .menu-item a:hover {
-  color: var(--primary-color-hover);
+  color: var(--w-hover);
 }
 
 #header {
   margin-top: 32px;
+}
+
+#header ol,
+ul {
+  padding-left: 0px;
+  margin-top: 16px;
+}
+
+#header > nav > a > button {
+  background-color: var(--w);
+  color: var(--c12);
+}
+
+#header > nav > a > button:hover {
+  background-color: var(--w-hover);
+  color: var(--c12-hover);
 }

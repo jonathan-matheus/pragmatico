@@ -41,7 +41,10 @@ class Style
         wp_enqueue_style(
             "header",
             get_template_directory_uri() .
-            "/assets/css/header.css"
+            "/assets/css/header.css",
+            [
+                'bootstrap'
+            ]
         );
     }
 
