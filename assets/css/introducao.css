@@ -1,0 +1,8 @@
+article#introducao h2 + p {
+  margin-top: 32px;
+}
+
+article#introducao {
+  margin-top: 160px;
+  max-width: 733px;
+}

@@ -47,6 +47,18 @@ class ColorControls
                 'default' => '#404040',
                 'label' => __('Secondary Color Hover', 'pragmatico'),
             ],
+            'third-color' => [
+                'default' => '#cccccc',
+                'label' => __('Third Color', 'pragmatico'),
+            ],
+            'gradient-one' => [
+                'default' => '#f16a69',
+                'label' => __('Gradient One', 'pragmatico'),
+            ],
+            'gradient-two' => [
+                'default' => '#ffbd4c',
+                'label' => __('Gradient Two', 'pragmatico'),
+            ]
         ];
 
 

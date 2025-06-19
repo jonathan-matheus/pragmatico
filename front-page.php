@@ -1,6 +1,7 @@
 <?php
 get_header();
-?>
-<?php
+
+get_template_part('parts/introducao');
+
 get_footer();
 ?>

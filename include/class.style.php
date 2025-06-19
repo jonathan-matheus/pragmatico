@@ -56,4 +56,22 @@ class Style
             "/assets/css/fonts.css"
         );
     }
+
+    public function loadIntroducao(): void
+    {
+        wp_enqueue_style(
+            "introducao",
+            get_template_directory_uri() .
+            "/assets/css/introducao.css"
+        );
+    }
+
+    public function loadGeneral()
+    {
+        wp_enqueue_style(
+            "general",
+            get_template_directory_uri() .
+            "/assets/css/general.css"
+        );
+    }
 }
