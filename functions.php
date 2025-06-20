@@ -5,6 +5,7 @@ require_once get_template_directory() . "/include/class.menus.php";
 require_once get_template_directory() . "/include/controls/class.colorControls.php";
 require_once get_template_directory() . "/include/controls/class.buttonControls.php";
 require_once get_template_directory() . "/include/controls/class.introducaoControls.php";
+require_once get_template_directory() . "/include/controls/class.sobreControls.php";
 
 $style = new Style();
 add_action("wp_enqueue_scripts", [$style, "loadBootstrap"]);
@@ -28,3 +29,6 @@ add_action('customize_register', [$buttonControls, 'customButtons']);
 
 $introducaoControls = new introducaoControls();
 add_action('customize_register', [$introducaoControls, 'customText']);
+
+$sobreControls = new sobreControls();
+add_action('customize_register', [$sobreControls, 'customText']);
