@@ -21,5 +21,9 @@
         --gradient-two:
             <?= get_theme_mod('gradient-two', '#ffbd4c'); ?>
         ;
+        --c7:
+            #717171;
+        --c9:
+            #404040;
     }
 </style>

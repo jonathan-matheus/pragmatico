@@ -16,6 +16,7 @@ require_once get_template_directory() .
 
 require_once get_template_directory() .
     "/include/postTypes/class.experienciaPostType.php";
+require_once get_template_directory() . "/include/postTypes/class.projetosPostType.php";
 
 require_once get_template_directory() . "/apis/class.periodo.php";
 
@@ -50,6 +51,12 @@ add_action("customize_register", [$experienciaControls, "customText"]);
 
 $experienciaPostType = new ExperienciaPostType();
 add_action("init", [$experienciaPostType, "registerPostType"]);
+
+$projetosPostType = new ProjetosPostType();
+add_action("init", [$projetosPostType, "registerPostType"]);
+add_action("init", [$projetosPostType, "registerTaxonomy"]);
+add_action("add_meta_boxes", [$projetosPostType, "addMetaBoxes"]);
+add_action("save_post", [$projetosPostType, "saveMetaBox"]);
 
 $periodo = new Periodo();
 add_action("rest_api_init", [$periodo, "registrarRotas"]);

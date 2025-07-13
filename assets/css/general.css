@@ -1,31 +1,48 @@
+body {
+  overflow-x: hidden;
+}
+
 p,
 h1 {
-    color: var(--w);
+  color: var(--w);
 }
 
 .c4 {
-    color: var(--c4);
+  color: var(--c4);
 }
 
 .w {
-    color: var(--w);
+  color: var(--w);
+}
+
+.c7 {
+  color: var(--c7);
+}
+
+.c9 {
+  color: var(--c9);
 }
 
 article + article {
-    margin: 160px 0px;
+  margin: 160px 0px;
 }
 
 .texto-gradiente-triplo {
-    background-image: linear-gradient(
-        91deg,
-        var(--gradient-one) 11.3%,
-        var(--gradient-two) 70.19%
-    );
+  background-image: linear-gradient(
+    91deg,
+    var(--gradient-one) 11.3%,
+    var(--gradient-two) 70.19%
+  );
 
-    -webkit-background-clip: text;
-    background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
 
-    color: transparent;
+  color: transparent;
 
-    -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+img {
+  border-radius: 5px;
+  max-width: 715px;
 }

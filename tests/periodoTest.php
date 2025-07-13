@@ -57,4 +57,27 @@ class PeriodoTest extends TestCase
         $body = json_decode($response->getBody(), true);
         $this->assertEquals('9 meses', $body);
     }
+
+    public function testPeriodoComInicioSemFim()
+    {
+        $response = $this->client->get('?inicio=2023-10-01');
+        $body = json_decode($response->getBody(), true);
+        $data_inicio = new DateTime('2023-10-01');
+        $data_fim = new DateTime();
+        $intervalo = $data_inicio->diff($data_fim);
+        $anos = $intervalo->y;
+        $meses = $intervalo->m;
+        $partes = [];
+        if ($anos > 0) {
+            $partes[] = $anos . " " . ($anos == 1 ? "ano" : "anos");
+        }
+        if ($meses > 0) {
+            $partes[] = $meses . " " . ($meses == 1 ? "mês" : "meses");
+        }
+        if (empty($partes)) {
+            $partes[] = "menos de um mês";
+        }
+        $periodo = implode(" e ", $partes);
+        $this->assertEquals($periodo, $body);
+    }
 }
