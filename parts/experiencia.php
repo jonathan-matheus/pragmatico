@@ -39,11 +39,11 @@ $query = new WP_Query([
                                 $url = get_site_url() . "/wp-json/periodo/v1/dados?inicio={$data_inicio}";
                                 $periodo_response = wp_remote_get($url);
                                 error_log("PERIODO: " . print_r($periodo_response, true));
-                                echo $data_inicio_formatted . " - " . __("the moment", "pragmatico") . " - " . wp_remote_retrieve_body($periodo_response);
+                                echo $data_inicio_formatted . " - " . __("the moment", "pragmatico") . " - " . json_decode(wp_remote_retrieve_body($periodo_response));
                             } else {
                                 $url = get_site_url() . "/wp-json/periodo/v1/dados?inicio={$data_inicio}&fim={$data_fim}";
                                 $periodo_response = wp_remote_get($url);
-                                echo $data_inicio_formatted . " - " . $data_fim_formatted . " - " . wp_remote_retrieve_body($periodo_response);
+                                echo $data_inicio_formatted . " - " . $data_fim_formatted . " - " . json_decode(wp_remote_retrieve_body($periodo_response));
                             }
                             ?>
                         </p>
