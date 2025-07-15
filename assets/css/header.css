@@ -28,13 +28,3 @@ ul {
   padding-left: 0px;
   margin-top: 16px;
 }
-
-#header > nav > a > button {
-  background-color: var(--w);
-  color: var(--c12);
-}
-
-#header > nav > a > button:hover {
-  background-color: var(--w-hover);
-  color: var(--c12-hover);
-}

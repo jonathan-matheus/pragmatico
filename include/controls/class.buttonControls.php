@@ -15,11 +15,19 @@ class ButtonControls
         $args_text_buttons = [
             'primary_button_text' => [
                 'default' => __('Contact', 'pragmatico'),
-                'label' => __('Primary Button Text', 'pragmatico'),
+                'label' => __('Contact Button Text', 'pragmatico'),
             ],
             'primary_button_link' => [
                 'default' => '#',
-                'label' => __('Primary Button Link', 'pragmatico'),
+                'label' => __('Contact Button Link', 'pragmatico'),
+            ],
+            'secondary_button_text' => [
+                'default' => __('Projects', 'pragmatico'),
+                'label' => __('Projects Button Text', 'pragmatico'),
+            ],
+            'secondary_button_link' => [
+                'default' => '#',
+                'label' => __('Projects Button Link', 'pragmatico'),
             ]
         ];
 

@@ -13,12 +13,15 @@ require_once get_template_directory() .
     "/include/controls/class.sobreControls.php";
 require_once get_template_directory() .
     "/include/controls/class.experienciaControls.php";
+require_once get_template_directory() .
+    "/include/controls/class.projectControls.php";
 
 require_once get_template_directory() .
     "/include/postTypes/class.experienciaPostType.php";
 require_once get_template_directory() . "/include/postTypes/class.projetosPostType.php";
 
 require_once get_template_directory() . "/apis/class.periodo.php";
+require_once get_template_directory() . "/apis/class.urlFormater.php";
 
 $style = new Style();
 add_action("wp_enqueue_scripts", [$style, "loadBootstrap"]);
@@ -49,6 +52,9 @@ add_action("customize_register", [$sobreControls, "customText"]);
 $experienciaControls = new ExperienciaControls();
 add_action("customize_register", [$experienciaControls, "customText"]);
 
+$projectControls = new ProjectControls();
+add_action("customize_register", [$projectControls, "customText"]);
+
 $experienciaPostType = new ExperienciaPostType();
 add_action("init", [$experienciaPostType, "registerPostType"]);
 
@@ -60,3 +66,5 @@ add_action("save_post", [$projetosPostType, "saveMetaBox"]);
 
 $periodo = new Periodo();
 add_action("rest_api_init", [$periodo, "registrarRotas"]);
+$urlFormater = new UrlFormater();
+add_action("rest_api_init", [$urlFormater, "registrarRotas"]);

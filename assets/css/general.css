@@ -46,3 +46,13 @@ img {
   border-radius: 5px;
   max-width: 715px;
 }
+
+.btn-w {
+  background-color: var(--w) !important;
+  color: var(--c12);
+}
+
+.btn-w:hover {
+  background-color: var(--w-hover) !important;
+  color: var(--c12-hover);
+}

@@ -55,8 +55,9 @@ class ProjetosPostType
         ?>
         <label for="projeto_tipo"><strong><?= __('Tipo de projeto', 'pragmatico') ?></strong></label><br>
         <select name="projeto_tipo" id="projeto_tipo" class="widefat">
-            <option value="estudos" <?php selected($tipo, 'estudos') ?>><?= __('Projeto de Estudos', 'pragmatico') ?></option>
-            <option value="profissional" <?php selected($tipo, 'profissional') ?>>
+            <option value="Projeto de estudos" <?php selected($tipo, 'estudos') ?>><?= __('Projeto de Estudos', 'pragmatico') ?>
+            </option>
+            <option value="Projeto profissional" <?php selected($tipo, 'profissional') ?>>
                 <?= __('Projeto Profissional', 'pragmatico') ?>
             </option>
         </select>

@@ -29,7 +29,7 @@
                 ]);
                 ?>
                 <a href="<?= get_theme_mod('primary_button_link', '#'); ?>">
-                    <button type="button" class="btn btn-content font-1-m-b">
+                    <button type="button" class="btn btn-w btn-content font-1-m-b">
                         <?=
                             get_theme_mod('primary_button_text', 'Contact');
                         ?>
