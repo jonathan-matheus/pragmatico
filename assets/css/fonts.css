@@ -35,6 +35,13 @@
   line-height: 36px;
 }
 
+.font-1-l {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
 .font-1-xl {
   font-family: "Orbitron", sans-serif;
   font-weight: 400;
@@ -61,6 +68,13 @@
     font-size: 48px;
     line-height: 56px;
   }
+}
+
+.font-1-m {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .font-1-m-b {

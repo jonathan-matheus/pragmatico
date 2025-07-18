@@ -23,6 +23,10 @@ h1 {
   color: var(--c9);
 }
 
+.c6 {
+  color: var(--c6);
+}
+
 article + article {
   margin: 160px 0px;
 }

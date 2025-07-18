@@ -50,7 +50,9 @@ $contador = 1;
                     </div>
                 </div>
             <?php }
-        } ?>
+        }
+        wp_reset_postdata();
+        ?>
     </div>
     <a href="<?= get_theme_mod('secondary_button_link', '#'); ?>">
         <button type="button" class="btn btn-content font-1-m-b btn-w mt-3">

@@ -28,6 +28,14 @@ class ButtonControls
             'secondary_button_link' => [
                 'default' => '#',
                 'label' => __('Projects Button Link', 'pragmatico'),
+            ],
+            'tertiary_button_text' => [
+                'default' => __('Articles', 'pragmatico'),
+                'label' => __('Articles Button Text', 'pragmatico'),
+            ],
+            'tertiary_button_link' => [
+                'default' => '#',
+                'label' => __('Articles Button Link', 'pragmatico'),
             ]
         ];
 
