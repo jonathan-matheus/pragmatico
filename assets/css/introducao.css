@@ -3,6 +3,5 @@ article#introducao h2 + p {
 }
 
 article#introducao {
-  margin-top: 160px;
   max-width: 733px;
 }
