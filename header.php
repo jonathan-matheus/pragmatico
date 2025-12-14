@@ -1,6 +1,6 @@
 <?php
-$c1 = get_theme_mod('pragmatico_primary_color', '#f7f7f7');
-$c5 = get_theme_mod('pragmatico_secondary_color', '#b2b2b2');
+require_once get_template_directory() . '/includes/classes/class.getColor.php';
+$color = new GetColor();
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -19,11 +19,11 @@ $c5 = get_theme_mod('pragmatico_secondary_color', '#b2b2b2');
         <header>
             <div class="flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between">
                 <div>
-                    <h1 class="text-[<?php echo $c1; ?>] font-1-m-b"><a
-                            href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <h1 class="text-[<?= $color::primary() ?>] font-1-m-b"><a
+                            href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
                 </div>
                 <div>
-                    <nav class="primary-navigation text-[<?php echo $c1; ?>]">
+                    <nav class="primary-navigation text-[<?= $color::primary() ?>]">
                         <?php
                         wp_nav_menu([
                             'theme_location' => 'primary',
@@ -39,7 +39,7 @@ $c5 = get_theme_mod('pragmatico_secondary_color', '#b2b2b2');
             </div>
 
             <div class="text-center">
-                <h1 class="text-[<?php echo $c1; ?>] mt-[120px]  font-1-xl"><?= get_the_title(); ?></h1>
-                <p class="text-[<?php echo $c5; ?>] font-1-xs"><?= get_the_excerpt(); ?></p>
+                <h1 class="text-[<?= $color::primary() ?>] mt-[120px]  font-1-xl"><?= get_the_title(); ?></h1>
+                <p class="text-[<?= $color::secondary() ?>] font-1-xs"><?= get_the_excerpt(); ?></p>
             </div>
         </header>
