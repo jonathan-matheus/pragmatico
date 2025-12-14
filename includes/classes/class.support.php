@@ -11,7 +11,7 @@ class Support
     public function enable_theme_support()
     {
         add_theme_support('custom-background');
-        add_theme_support('');
+        add_theme_support('post-thumbnails');
     }
 
     public function enable_theme_support_init()
