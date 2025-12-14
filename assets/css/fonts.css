@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:wght@500;600&family=Roboto:wdth,wght@75..100,100..900&display=swap");
+
+.font-1-xl {
+  font-family: "Orbitron", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.font-1-m {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.font-1-m-b {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.font-1-xs {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.font-2-s {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
