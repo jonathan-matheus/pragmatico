@@ -40,6 +40,8 @@ $color = new GetColor();
 
             <div class="text-center">
                 <h1 class="text-[<?= $color::primary() ?>] mt-[120px]  font-1-xl"><?= get_the_title(); ?></h1>
-                <p class="text-[<?= $color::secondary() ?>] font-1-xs"><?= get_the_excerpt(); ?></p>
+                <?php if (is_page()) { ?>
+                    <p class="text-[<?= $color::secondary() ?>] font-1-xs"><?= get_the_excerpt(); ?></p>
+                <?php } ?>
             </div>
         </header>
