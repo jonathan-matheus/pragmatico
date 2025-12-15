@@ -23,7 +23,12 @@ class Color
                 'default' => '#b2b2b2',
                 'id' => 'pragmatico_secondary_color',
                 'label' => __('Secondary Color', 'pragmatico'),
-            ]
+            ],
+            [
+                'default' => '#404040',
+                'id' => 'pragmatico_text_color',
+                'label' => __('Text Color', 'pragmatico'),
+            ],
         ];
 
         foreach ($args_colors as $color) {

@@ -130,3 +130,47 @@ class PostType
         }
     }
 }
+
+class ProjectType
+{
+    public function __construct()
+    {
+        add_action('init', [$this, 'register_post_type']);
+        add_action('init', [$this, 'register_taxonomy']);
+    }
+
+    public function register_post_type()
+    {
+        register_post_type(
+            'projeto',
+            [
+                'labels' => [
+                    'name' => __('Projetos'),
+                    'singular_name' => __('Projeto'),
+                ],
+                'public' => true,
+                'has_archive' => true,
+                'supports' => ['title', 'editor', 'thumbnail'],
+                'menu_position' => 6,
+                'menu_icon' => 'dashicons-layout',
+            ]
+        );
+    }
+
+    public function register_taxonomy()
+    {
+        register_taxonomy(
+            'tecnologias',
+            'projeto',
+            [
+                'labels' => [
+                    'name' => __('Tecnologias'),
+                    'singular_name' => __('Tecnologia'),
+                ],
+                'hierarchical' => true,
+                'public' => true,
+                'show_admin_column' => true,
+            ]
+        );
+    }
+}

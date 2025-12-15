@@ -6,6 +6,12 @@
   font-weight: 600;
 }
 
+.font-1-l {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .font-1-m {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -19,9 +25,9 @@
 }
 
 .font-1-xs {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .font-2-s {

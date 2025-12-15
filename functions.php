@@ -10,3 +10,4 @@ new Support();
 new Color();
 new Css();
 new PostType();
+new ProjectType();
