@@ -1,7 +1,12 @@
 <?php
+require_once get_template_directory() . '/includes/classes/class.periodo.php';
+$periodo_n = new Periodo();
 $color = new GetColor();
+
 $nome = get_post_meta(get_the_ID(), '_experiencia_nome', true);
 $periodo = get_post_meta(get_the_ID(), '_experiencia_periodo', true);
+$data_inicio = get_post_meta(get_the_ID(), '_experiencia_data_inicio', true);
+$data_fim = get_post_meta(get_the_ID(), '_experiencia_data_fim', true);
 ?>
 
 <div class="flex gap-[12px]">
@@ -11,7 +16,7 @@ $periodo = get_post_meta(get_the_ID(), '_experiencia_periodo', true);
         <h3 class="text-white font-2-s"><?= get_the_title(); ?></h3>
         <div class="font-2-xs text-[<?= $color::secondary() ?>]">
             <h4><?= $nome ?></h4>
-            <h4><?= $periodo ?></h4>
+            <h4><?= $periodo_n->formatar($data_inicio, $data_fim); ?></h4>
         </div>
         <div class="text-white font-2-xs">
             <p><?php the_content(); ?></p>

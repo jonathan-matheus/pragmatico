@@ -45,6 +45,9 @@ class PostType
         // Recuperar valores salvos
         $nome = get_post_meta($post->ID, '_experiencia_nome', true);
         $periodo = get_post_meta($post->ID, '_experiencia_periodo', true);
+        $data_inicio = get_post_meta($post->ID, '_experiencia_data_inicio', true);
+        $data_fim = get_post_meta($post->ID, '_experiencia_data_fim', true);
+        $ativo = get_post_meta($post->ID, '_experiencia_ativo', true);
 
         // Nonce para segurança
         wp_nonce_field('experiencia_nonce', 'experiencia_nonce_field');
@@ -65,6 +68,30 @@ class PostType
             <input type="text" id="experiencia_periodo" name="experiencia_periodo" value="<?php echo esc_attr($periodo); ?>"
                 placeholder="Ex: Janeiro 2020 - Dezembro 2023"
                 style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+
+        <div>
+            <label for="experiencia_data_inicio" style="display: block; margin-bottom: 5px; font-weight: bold;">
+                Data de Início
+            </label>
+            <input type="date" id="experiencia_data_inicio" name="experiencia_data_inicio"
+                value="<?php echo esc_attr($data_inicio); ?>"
+                style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+
+        <div>
+            <label for="experiencia_data_fim" style="display: block; margin-bottom: 5px; font-weight: bold;">
+                Data de Fim
+            </label>
+            <input type="date" id="experiencia_data_fim" name="experiencia_data_fim" value="<?php echo esc_attr($data_fim); ?>"
+                style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" id="experiencia_ativo" name="experiencia_ativo" <?php checked($ativo, 'on'); ?>>
+                Em andamento
+            </label>
         </div>
         <?php
     }
@@ -99,6 +126,30 @@ class PostType
                 $post_id,
                 '_experiencia_periodo',
                 sanitize_text_field($_POST['experiencia_periodo'])
+            );
+        }
+
+        if (isset($_POST['experiencia_data_inicio'])) {
+            update_post_meta(
+                $post_id,
+                '_experiencia_data_inicio',
+                sanitize_text_field($_POST['experiencia_data_inicio'])
+            );
+        }
+
+        if (isset($_POST['experiencia_data_fim'])) {
+            update_post_meta(
+                $post_id,
+                '_experiencia_data_fim',
+                sanitize_text_field($_POST['experiencia_data_fim'])
+            );
+        }
+
+        if (isset($_POST['experiencia_ativo'])) {
+            update_post_meta(
+                $post_id,
+                '_experiencia_ativo',
+                sanitize_text_field($_POST['experiencia_ativo'])
             );
         }
     }

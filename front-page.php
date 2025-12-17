@@ -25,6 +25,9 @@ $color = new GetColor();
                 'terms' => 'experiencia',
             ],
         ],
+        'meta_key' => '_experiencia_data_inicio',
+        'orderby' => 'meta_value',
+        'order' => 'DESC'
     ];
     $query = new WP_Query($args_experiencia);
     ?>
