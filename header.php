@@ -10,6 +10,14 @@ $color = new GetColor();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name') ?></title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <?php
+    if (is_singular()) {
+        $desc = get_the_excerpt();
+    } else {
+        $desc = get_bloginfo('description');
+    }
+    ?>
+    <meta name="description" content="<?= esc_attr($desc) ?> ?>">
     <?php wp_head(); ?>
 </head>
 
