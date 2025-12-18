@@ -12,6 +12,7 @@ class Support
     {
         add_theme_support('custom-background');
         add_theme_support('post-thumbnails');
+        add_theme_support('title-tag');
     }
 
     public function enable_theme_support_init()
