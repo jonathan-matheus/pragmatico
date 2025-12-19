@@ -43,6 +43,7 @@ $color = new GetColor();
         } else {
             echo '<p class="text-white">Nenhuma experiência encontrada.</p>';
         }
+        wp_reset_postdata();
         ?>
 </article>
 
@@ -76,6 +77,7 @@ $color = new GetColor();
         } else {
             echo '<p class="text-white">Nenhuma experiência encontrada.</p>';
         }
+        wp_reset_postdata();
         ?>
 </article>
 
@@ -109,6 +111,7 @@ $color = new GetColor();
         } else {
             echo '<p class="text-white">Nenhuma experiência encontrada.</p>';
         }
+        wp_reset_postdata();
         ?>
 </article>
 <article>
@@ -149,6 +152,7 @@ $color = new GetColor();
         } else {
             echo '<p class="text-white">Nenhum projeto encontrado.</p>';
         }
+        wp_reset_postdata();
         ?>
     </div>
 </article>

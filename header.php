@@ -47,7 +47,17 @@ $color = new GetColor();
             </div>
 
             <div class="text-center">
-                <h1 class="text-[<?= $color::primary() ?>] mt-[120px]  font-1-xl"><?= get_the_title(); ?></h1>
+                <h1 class="text-[<?= $color::primary() ?>] mt-[120px]  font-1-xl"><?php
+                  if (is_home() && !is_front_page()) {
+                      echo get_the_title(get_option('page_for_posts'));
+                  } elseif (is_archive()) {
+                      echo get_the_archive_title();
+                  } elseif (is_search()) {
+                      echo 'Resultados da busca';
+                  } else {
+                      echo get_the_title();
+                  }
+                  ?></h1>
                 <?php if (is_page()) { ?>
                     <p class="text-[<?= $color::secondary() ?>] font-1-xs"><?= get_the_excerpt(); ?></p>
                 <?php } ?>
