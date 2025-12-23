@@ -204,6 +204,7 @@ class ProjectType
                 'supports' => ['title', 'editor', 'thumbnail'],
                 'menu_position' => 6,
                 'menu_icon' => 'dashicons-layout',
+                'rewrite' => ['slug' => 'projetos'],
             ]
         );
     }

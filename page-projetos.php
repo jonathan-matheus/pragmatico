@@ -1,4 +1,8 @@
 <?php
+/**
+ * Template Name: Projetos
+ */
+
 get_header();
 require_once get_template_directory() . '/includes/classes/class.getColor.php';
 $color = new GetColor();
@@ -6,9 +10,14 @@ $color = new GetColor();
 <main class="my-8">
     <div class="grid grid-cols-2 gap-4">
         <?php
-        if (have_posts()):
-            while (have_posts()):
-                the_post();
+        $args_projetos = [
+            'post_type' => 'projeto',
+            'posts_per_page' => 2,
+        ];
+        $query = new WP_Query($args_projetos);
+        if ($query->have_posts()):
+            while ($query->have_posts()):
+                $query->the_post();
                 ?>
                 <article class="mb-8">
                     <div class="h-48">
