@@ -8,7 +8,7 @@ require_once get_template_directory() . '/includes/classes/class.getColor.php';
 $color = new GetColor();
 ?>
 <main class="my-8">
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <?php
         $args_projetos = [
             'post_type' => 'projeto',
