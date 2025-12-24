@@ -144,12 +144,100 @@ main.entry-content hr {
   margin: 1.5rem 0;
 }
 
-/* Embedded media responsiveness */
+/* Embedded media responsiveness and Gutenberg video embeds 🔧 */
+main.entry-content .wp-block-embed,
+main.entry-content .wp-block-embed__wrapper,
 main.entry-content iframe,
 main.entry-content video,
-main.entry-content embed,
-main.entry-content .wp-block-embed {
+main.entry-content embed {
   max-width: 100%;
+}
+
+/* Make embeds maintain aspect ratio regardless of inline width/height */
+main.entry-content .wp-block-embed__wrapper {
+  position: relative;
+  width: 100%;
+  /* default to 16:9 */
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+main.entry-content .wp-block-embed__wrapper iframe,
+main.entry-content .wp-block-embed__wrapper video,
+main.entry-content .wp-block-embed__wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  display: block;
+}
+
+/* Figure container and alignment handling */
+main.entry-content figure.wp-block-embed {
+  margin: 0 0 1.25rem;
+}
+
+/* Centered embeds: limited width and centered */
+main.entry-content figure.wp-block-embed.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  width: clamp(260px, 60%, 900px);
+}
+
+/* Left/right aligned embeds: float with comfortable margins and fluid widths */
+main.entry-content figure.wp-block-embed.alignleft {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: clamp(180px, 45%, 50%);
+  max-width: 45%;
+}
+main.entry-content figure.wp-block-embed.alignright {
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  width: clamp(180px, 45%, 50%);
+  max-width: 45%;
+}
+
+/* Keep text wrapping comfortably around floated embeds */
+main.entry-content figure.wp-block-embed.alignleft,
+main.entry-content figure.wp-block-embed.alignright {
+  shape-outside: inset(0);
+}
+
+/* Respect explicit 16:9 or video types */
+main.entry-content .wp-embed-aspect-16-9 .wp-block-embed__wrapper,
+main.entry-content .is-type-video .wp-block-embed__wrapper {
+  padding-top: 56.25%;
+}
+
+/* Focus state for keyboard users */
+main.entry-content figure.wp-block-embed:focus-within {
+  outline: 3px solid rgba(99, 179, 237, 0.25);
+  outline-offset: 2px;
+}
+
+/* Small screens: make embeds full width and remove floats */
+@media (max-width: 600px) {
+  main.entry-content figure.wp-block-embed,
+  main.entry-content .wp-block-embed,
+  main.entry-content .wp-block-embed__wrapper {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem;
+  }
+  main.entry-content figure.wp-block-embed.alignleft,
+  main.entry-content figure.wp-block-embed.alignright,
+  main.entry-content figure.wp-block-embed.aligncenter {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* Accessibility focus */
