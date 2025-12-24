@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main class="container mx-auto max-w-4xl">
+<main class="container mx-auto max-w-4xl entry-content">
     <?php
     while (have_posts()) {
         the_post();
