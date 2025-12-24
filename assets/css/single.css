@@ -3,7 +3,8 @@
 /* Scope to single post content */
 main.entry-content {
   color: #e6e6e6; /* light gray text for contrast */
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.8;
   background: transparent; /* page background is black */
@@ -23,9 +24,15 @@ main.entry-content h6 {
   font-weight: 600;
 }
 
-main.entry-content h1 { font-size: 2rem; }
-main.entry-content h2 { font-size: 1.6rem; }
-main.entry-content h3 { font-size: 1.3rem; }
+main.entry-content h1 {
+  font-size: 2rem;
+}
+main.entry-content h2 {
+  font-size: 1.6rem;
+}
+main.entry-content h3 {
+  font-size: 1.3rem;
+}
 
 /* Paragraphs */
 main.entry-content p {
@@ -54,34 +61,48 @@ main.entry-content ul li,
 main.entry-content ol li {
   margin-bottom: 0.5rem;
 }
-main.entry-content ul { list-style-type: disc; }
-main.entry-content ol { list-style-type: decimal; }
-
-/* Images */
-main.entry-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+main.entry-content ul {
+  list-style-type: disc;
 }
+main.entry-content ol {
+  list-style-type: decimal;
+}
+
 /* Align classes used by WP blocks */
-main.entry-content .alignleft { float: left; margin-right: 1rem; max-width: 45%; }
-main.entry-content .alignright { float: right; margin-left: 1rem; max-width: 45%; }
-main.entry-content .aligncenter { display: block; margin-left: auto; margin-right: auto; }
+main.entry-content .alignleft {
+  float: left;
+  margin-right: 1rem;
+  max-width: 45%;
+}
+main.entry-content .alignright {
+  float: right;
+  margin-left: 1rem;
+  max-width: 45%;
+}
+main.entry-content .aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Figure/Caption */
-main.entry-content figure { margin: 0 0 1.25rem; }
-main.entry-content figcaption { color: #bdbdbd; font-size: 0.95rem; text-align: center; margin-top: 0.4rem; }
+main.entry-content figure {
+  margin: 0 0 1.25rem;
+}
+main.entry-content figcaption {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 0.4rem;
+}
 
 /* Blockquote */
 main.entry-content blockquote {
-  border-left: 4px solid rgba(255,255,255,0.08);
+  border-left: 4px solid rgba(255, 255, 255, 0.08);
   padding: 0.6rem 1rem;
   margin: 0 0 1rem;
   color: #cfcfcf;
-  background: rgba(255,255,255,0.01);
+  background: rgba(255, 255, 255, 0.01);
 }
 
 /* Code / Preformatted */
@@ -91,11 +112,14 @@ main.entry-content code {
   color: #f8f8f2;
   padding: 0.6rem;
   border-radius: 6px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+    "Courier New", monospace;
   font-size: 0.95rem;
   overflow: auto;
 }
-main.entry-content pre { margin: 0 0 1rem; }
+main.entry-content pre {
+  margin: 0 0 1rem;
+}
 
 /* Tables */
 main.entry-content table {
@@ -109,28 +133,42 @@ main.entry-content td {
   border: 1px solid #222;
   padding: 0.6rem;
 }
-main.entry-content th { background: #0f0f0f; }
+main.entry-content th {
+  background: #0f0f0f;
+}
 
 /* Horizontal rule */
-main.entry-content hr { border: none; border-top: 1px solid #222; margin: 1.5rem 0; }
+main.entry-content hr {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 1.5rem 0;
+}
 
 /* Embedded media responsiveness */
 main.entry-content iframe,
 main.entry-content video,
 main.entry-content embed,
-main.entry-content .wp-block-embed { max-width: 100%; }
+main.entry-content .wp-block-embed {
+  max-width: 100%;
+}
 
 /* Accessibility focus */
 main.entry-content a:focus,
 main.entry-content button:focus,
 main.entry-content input:focus {
-  outline: 3px solid rgba(99,179,237,0.25);
+  outline: 3px solid rgba(99, 179, 237, 0.25);
   outline-offset: 2px;
 }
 
 /* Small screens */
 @media (max-width: 600px) {
-  main.entry-content { font-size: 15px; }
+  main.entry-content {
+    font-size: 15px;
+  }
   main.entry-content .alignleft,
-  main.entry-content .alignright { float: none; margin: 0 auto 1rem; max-width: 100%; }
+  main.entry-content .alignright {
+    float: none;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+  }
 }
