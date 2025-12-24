@@ -179,13 +179,13 @@ main.entry-content figure.wp-block-embed {
   margin: 0 0 1.25rem;
 }
 
-/* Centered embeds: limited width and centered */
+/* Centered embeds: occupy full width of the text container */
 main.entry-content figure.wp-block-embed.aligncenter {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
-  width: clamp(260px, 60%, 900px);
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Left/right aligned embeds: float with comfortable margins and fluid widths */
