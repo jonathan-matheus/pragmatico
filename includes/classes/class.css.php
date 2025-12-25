@@ -23,12 +23,12 @@ class Css
         );
 
         // Enfileira apenas em posts individuais e garante dependência correta
-        if ( is_singular('post') ) {
+        if (is_singular('post')) {
             wp_enqueue_style(
                 'single-style',
                 get_template_directory_uri() . '/assets/css/single.css',
                 array('main-style'),
-                '1.0.0'
+                '1.1.0'
             );
         }
     }
