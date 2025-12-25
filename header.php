@@ -54,7 +54,7 @@ $color = new GetColor();
                       echo get_the_archive_title();
                   } elseif (is_search()) {
                       echo 'Resultados da busca';
-                  } else {
+                  } elseif (!is_single()) {
                       echo get_the_title();
                   }
                   ?></h1>
