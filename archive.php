@@ -1,5 +1,7 @@
 <?php
 get_header();
+require_once get_template_directory() . '/includes/classes/class.getColor.php';
+$color = new GetColor();
 ?>
 <main class="my-8">
     <?php
