@@ -125,7 +125,8 @@ $color = new GetColor();
     ];
 
     foreach (get_terms($args_tecnologias) as $tecnologia) {
-        echo '<span class="inline-block bg-white text-black rounded px-4 py-2 mr-2 mb-2 font-1-xs">' . esc_html($tecnologia->name) . '</span>';
+        $link = get_term_link($tecnologia);
+        echo '<a href="' . esc_url($link) . '"><span class="inline-block bg-white text-black rounded px-4 py-2 mr-2 mb-2 font-1-xs">' . esc_html($tecnologia->name) . '</span></a>';
     }
     ?>
 </article>
