@@ -21,8 +21,10 @@ $section_title = isset($args['section_title']) && is_string($args['section_title
                 'post_type' => 'prag_experience',
                 'post_status' => 'publish',
                 'posts_per_page' => -1,
-                'orderby' => 'menu_order',
-                'order' => 'ASC',
+                'meta_key' => '_pragmatico_work_start',
+                'orderby' => 'meta_value',
+                'meta_type' => 'DATE',
+                'order' => 'DESC',
             ]);
 
             if ($experience_query->have_posts()) :
