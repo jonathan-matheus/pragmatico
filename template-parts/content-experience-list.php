@@ -32,7 +32,7 @@ $section_title = isset($args['section_title']) && is_string($args['section_title
                     $experience_query->the_post();
 
                     $experience_id = get_the_ID();
-                    $company_logo = get_post_meta($experience_id, '_pragmatico_company_logo', true);
+                    $company_logo = get_the_post_thumbnail_url($experience_id, 'thumbnail'); 
                     $role = get_post_meta($experience_id, '_pragmatico_role', true);
                     $company_name = get_post_meta($experience_id, '_pragmatico_company_name', true);
                     $location = get_post_meta($experience_id, '_pragmatico_location', true);

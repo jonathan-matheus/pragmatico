@@ -106,7 +106,6 @@ class Pragmatico_Custom_Post
         $work_current = get_post_meta($post->ID, '_pragmatico_work_current', true);
         $location = get_post_meta($post->ID, '_pragmatico_location', true);
         $work_type = get_post_meta($post->ID, '_pragmatico_work_type', true);
-        $company_logo = get_post_meta($post->ID, '_pragmatico_company_logo', true);
 
         echo '<p><label for="pragmatico_role"><strong>' . esc_html__('Role', 'pragmatico') . '</strong></label><br>';
         echo '<input type="text" id="pragmatico_role" name="pragmatico_role" value="' . esc_attr($role) . '" class="widefat"></p>';
@@ -144,9 +143,6 @@ class Pragmatico_Custom_Post
 
         echo '</select></p>';
 
-        echo '<p><label for="pragmatico_company_logo"><strong>' . esc_html__('Company Logo URL', 'pragmatico') . '</strong></label><br>';
-        echo '<input type="url" id="pragmatico_company_logo" name="pragmatico_company_logo" value="' . esc_attr($company_logo) . '" class="widefat"></p>';
-
         echo '<p class="description">' . esc_html__('Use the post content editor for the job description (what you did).', 'pragmatico') . '</p>';
     }
 
@@ -175,14 +171,6 @@ class Pragmatico_Custom_Post
             if (isset($_POST[$post_field])) {
                 update_post_meta($post_id, $meta_key, sanitize_text_field(wp_unslash($_POST[$post_field])));
             }
-        }
-
-        if (isset($_POST['pragmatico_company_logo'])) {
-            update_post_meta(
-                $post_id,
-                '_pragmatico_company_logo',
-                esc_url_raw(wp_unslash($_POST['pragmatico_company_logo']))
-            );
         }
 
         $work_start = '';

@@ -11,8 +11,8 @@ function pragmatico_theme_setup()
     add_theme_support('custom-background', [
         'default-color' => '#202023',
     ]);
-
     add_theme_support('post-thumbnails');
+    add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'pragmatico_theme_setup');
 
