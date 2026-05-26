@@ -1,0 +1,8 @@
+@layer components {
+    .single-post-content iframe,
+    .single-post-content .wp-block-embed,
+    .single-post-content .wp-block-embed__wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+}
