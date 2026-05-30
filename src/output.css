@@ -650,6 +650,30 @@
     width: 100%;
     max-width: 100%;
   }
+  .single-post-content :not(pre) > code {
+    padding: 0.125rem 0.4rem;
+    border-radius: 0.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.9em;
+  }
+  .single-post-content pre {
+    overflow-x: auto;
+    margin-block: 1.25rem;
+    padding: 1rem 1.1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background-color: rgba(10, 13, 20, 0.85);
+  }
+  .single-post-content pre code {
+    display: block;
+    min-width: max-content;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.94rem;
+    line-height: 1.7;
+    white-space: pre;
+  }
 }
 @property --tw-space-y-reverse {
   syntax: "*";
