@@ -1,21 +1,28 @@
-# Tema Pragmatico
+![Home do site](imgs/home.png)
 
-Tema WordPress customizado para o projeto Pragmatico.
+# Pragmatico
 
-## Requisitos
+Tema escuro e minimalista de portfólio para desenvolvedores e criadores digitais. 
+Apresente sua bio, experiências profissionais, projetos e blog em um só lugar, construído com Tailwind CSS.
 
-- WordPress instalado e funcionando
-- PHP compatível com sua versão do WordPress
+## Abrir e rodar o projeto
 
-## Estrutura básica
+Após concluir a instalação do LAMP, siga estes passos:
 
-- `functions.php`: configurações e recursos do tema
-- `style.css`: cabeçalho do tema e estilos principais
-- `templates/` e `template-parts/`: templates e blocos reutilizáveis
-- `src/`: arquivos-fonte de desenvolvimento (quando aplicável)
+1. Faça o download do WordPress a partir deste link: (https://br.wordpress.org/download/).
+2. Instale e configure o WordPress conforme as instruções.
+3. Vá até a pasta chamada "wp-content/themes".
+4. Crie uma nova pasta dentro dela com o nome "alura_intercambios".
+5. Coloque todos os arquivos que você baixou deste repositório dentro da pasta "alura_intercambios".
+6. Agora, ative o tema que você acabou de adicionar.
+7. Por fim, crie as páginas necessárias de acordo com as orientações.
 
-## Desenvolvimento
+## Como contribuir
 
-1. Ative o tema no painel do WordPress.
-2. Edite os arquivos do tema conforme necessário.
-3. Se houver fluxo de build front-end, rode os scripts do `package.json`.
+1. Faça um fork do projeto: https://github.com/jonathan-matheus/pragmatico
+2. Clone o seu fork para sua maquina: git clone git@github.com:jonathan-matheus/pragmatico.git
+3. Crie uma branch para realizar sua modificação: git checkout -b name_new_feature
+4. Adicione suas modificações e faça commit: git commit -m "Descreva sua modificação"
+5. Push: git push origin name_new_feature
+6. Crie um novo Pull Request
+7. Pronto, agora só aguarde a análise
